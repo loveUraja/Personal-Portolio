@@ -1,0 +1,684 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #121212;
+}
+
+li {
+    list-style: none;
+}
+
+h3 {
+    font-size: 44px;
+    line-height: 55px;
+    color: #121212;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 32px;
+    color: #6c6c6c;
+    margin-top: 16px;
+    font-weight: normal;
+}
+
+.topnav {
+    background-color: rgb(180, 182, 181);
+    overflow: hidden;
+
+    position: fixed;
+    /* height: 150px; */
+    width: 100%;
+    transition: all 0.5s ease;
+    z-index: 1;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+
+  .topnav i{
+    color: rgba(231, 135, 103, 0.688);
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    /* font-size: 35px; */
+    color: #080707;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+    transition: all 0.5s ease;
+
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+/* home-page-work */
+
+.backggrounD {
+    /* border: 2px solid black; */
+    background-size: 100vw;
+    height: 100vh;
+
+    background: url(./tasveer/homeBGone1.png) no-repeat center center/cover;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    background-attachment: fixed;
+    position: relative;
+    /* top: 0; */
+}
+ .backtotop{
+    display: flex;
+   
+    justify-content: end;
+    
+}
+.backtotop .heybtn{
+
+    font-size: 1.2em;
+    padding: 0.9vmin;
+    border-radius: 12px;
+}
+.backggrounD .hero-shape {
+    /* border: 2px solid black; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100vw;
+}
+
+.backggrounD .hero-shape img {
+
+    width: 100%;
+    display: block;
+}
+
+.hero-text {
+    display: flex;
+    /* border: 2px solid black; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text h3 {
+    text-align: center;
+    width: 100vmin;
+    font-size: 5.2vmin;
+    margin: 25px auto;
+    padding: 15px;
+    font-family: 'Caveat', cursive;
+}
+
+.hero-text h6 {
+    position: relative;
+    top: -50px;
+    text-align: center;
+}
+
+.hero-text .btn {
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+.hero-text .btn li {
+    /* border: 2px solid black; */
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+    top: -40px;
+
+    margin: auto 30px;
+    font-size: 2.5vmin;
+    padding: 10px;
+    background-color: rgb(191, 226, 237);
+    /* color: #121212; */
+}
+
+.hero-text .btn li i {
+    margin: auto 5px;
+
+}
+
+/* service's */
+.service {
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.service h6 {
+    font-size: 3vmin;
+}
+
+.service-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-content .service-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-content .service-box img {
+    width: 15vmin;
+    height: 13vmin;
+}
+
+.service-content .service-box p,
+h4 {
+    text-align: left;
+}
+
+.service-content .service-box p {
+    /* border: 2px solid black; */
+    font-size: 2.2vmin;
+    color: #6c6c6c;
+}
+
+.service-content .service-box .col-1,
+.col-2 {
+    margin: auto 10vmin;
+    /* border: 2px solid black; */
+    /* box-shadow: 2px; */
+}
+
+.service-content .serivice-img {
+    display: flex;
+}
+
+.service-content .serivice-img img {
+    width: 100vmin;
+}
+
+/* pricing */
+.pricing {
+    background-color: rgb(248, 246, 246);
+}
+
+.table {
+    margin: 7rem 10rem 7rem 7rem;
+    /* border: 2px solid black;/ */
+
+}
+
+.price .btn li {
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+    width: 14vmin;
+    font-size: 2vmin;
+    padding: 5px;
+    background-color: rgb(191, 226, 237);
+}
+
+.pricing .table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing .basic .basic-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(156, 156, 156);
+    padding: 35px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.pricing .basic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vmin;
+    border: 2px solid grey;
+}
+
+.pricing .table .basic {
+    /* border: 2px solid black; */
+    border-radius: 20px;
+}
+
+.pricing .basic .price .dollar {
+    font-size: 3.1vmin;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 600;
+}
+
+.pricing .basic .price .currency {
+    font-size: 6.5vmin;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 300;
+    letter-spacing: -2px;
+    line-height: 60px;
+}
+
+.pricing .basic .price .cent {
+    font-size: 2.1vmin;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 300;
+}
+
+.pricing .basic .price .Month {
+    font-size: 2.1vmin;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 300;
+}
+
+.pricing .basic .price li {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding: 17px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.pricing .basic .price .btn {
+    display: flex;
+    position: relative;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing .basic .price ul li i {
+    margin: 7px;
+}
+
+/* subscription */
+.callto-act {
+    margin: auto 15vmin;
+}
+
+.callto-act {
+    background-image: url(./tasveer/gidsure.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 65vh;
+    max-width: 100vw;
+    background-position: center 200px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.callto-act .parallax {
+    position: absolute;
+    text-align: center;
+    top: 35vmin;
+    /* left: 25vmin; */
+}
+
+.callto-act .parallax h3 {
+    font-size: 5.7vmin;
+    font-family: 'Caveat', cursive;
+
+}
+
+.callto-act .parallax p {
+    font-size: 2.7vmin;
+    font-weight: 200;
+    font-family: 'Caveat', cursive;
+
+}
+
+.callto-act .parallax .call-news {
+    /* border : 2px solid black; */
+    border-radius: 20px;
+    padding: 1.5vmin;
+    background-color: ghostwhite;
+    /* background:; */
+}
+
+.callto-act .parallax .call-news i {
+    margin: auto -3.5vmin;
+    font-size: 2.5vmin;
+    text-align: center;
+}
+
+.callto-act .parallax .call-news input {
+
+    margin: auto 5vmin;
+    border-radius: 15px;
+    border: none;
+
+    width: 30vmin;
+    height: 3.5vmin;
+
+}
+
+.callto-act .parallax .call-news button {
+    border-radius: 15vmin;
+    border: 1px solid grey;
+    margin: auto -5vmin;
+    width: 5rem;
+    height: 3.5vmin;
+}
+
+
+
+
+
+
+/* contact */
+.contact {
+    border: 2px solid ghostwhite;
+    /* width: 50vmin; */
+    height: auto;
+
+    background-color: ghostwhite;
+    margin: 5vmin auto;
+}
+
+.contact h3 {
+    /* margin-top: -10px; */
+    font-size: 5.5vmin;
+}
+
+.contact h6 {
+    position: relative;
+    margin-top: -0.6vmin;
+    font-size: 2.5vmin;
+}
+
+.contact h3,
+h6 {
+    text-align: center;
+}
+
+.contact .form .first-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .form .first-row input {
+    font-size: 3.1vmin;
+
+    height: 6vmin;
+    margin: 4vmin 2vmin;
+    padding: 0 3vmin;
+
+}
+
+.contact .form .second-row input {
+    font-size: 3.1vmin;
+    height: 6vmin;
+
+    margin: auto 2vmin;
+    padding: 0 3vmin;
+
+
+}
+
+.contact .form .second-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .form .textsomething {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 50%; */
+    margin: 5vmin;
+}
+
+.contact .form textarea {
+    resize: none;
+    padding: 1vmin 1vmin;
+    width: 94vmin;
+    height: 25vmin;
+}
+
+.contact .wholediv {
+    font-size: 3.1vmin;
+    margin: 5vmin;
+}
+
+.contact .wholediv .btn {
+    text-align: center;
+}
+
+.contact .wholediv .btn a {
+    background-color: rgb(127, 126, 126);
+    border-radius: 20px;
+    padding: 0.9vmin;
+}
+
+
+
+/* footer */
+.footer .logo img{
+    width: 4.1rem;
+}
+.footer{
+    background-color: rgb(248, 246, 246);
+
+    padding: 8vmin;
+}
+.footer .row-1{
+    display: flex;
+}
+.footer .row-1 ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.footer .row-1 li{
+    /* border: 2px solid black; */
+    font-size: 3vmin;
+    margin-left: 2.5vmin ;
+}
+
+.footer .row-2{
+    padding: 5vmin;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+
+}
+
+.footer .row-2 .first-col h5{
+    font-size: 4vmin;
+    font-family: 'Caveat', cursive;
+
+    font-weight: 600;
+    text-align: left;
+
+}
+.footer .row-2 .four-col h5{
+    font-size: 3.5vmin;
+    font-weight: 400;
+    text-align: center;
+
+}
+.footer .row-2 .first-col li{
+    font-size: 2vmin;
+    line-height: 30px;
+    font-family: 'Caveat', cursive;
+
+    /* padding-bottom: 20px; */
+    font-weight: 200;
+    text-align: left;
+
+}
+
+.footer .row-2 .four-col h5{
+    font-size: 6vmin;
+    font-family: 'Caveat', cursive;
+
+    font-weight: 200;
+}
+.footer .row-2 .four-col input{
+    /* color:#7f4040; */
+    font-family: 'Caveat', cursive;
+
+    padding: .5vmin 3vmin;
+    font-size: 3.5vmin;
+    border: none;
+    border-radius: 20px;
+}
+.footer .row-2 .four-col button{
+    cursor: pointer;
+    font-size: 2vmin;
+    padding: 0.5vmin;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(127, 126, 126);
+
+}
+
+.last-footer{
+    background-color: #6c6c6c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vmin;
+    font-weight: 500;
+}
+@media  only screen and (max-width :1056px){
+    /* nav ke logo ko target kia hai.  */
+    .nav .logo img{
+        width: 9.5vmin;
+        margin-left: -8.5vmin;
+    }
+/* nav -links */
+    .nav .menu-bar .menu-items{
+        display: none;
+    }
+    .nav .social-icons{
+        display: none;
+    }
+    .nav .navbar-toggler{
+        display: block;
+        margin-left: 65vmin;
+    }
+
+/* service content ka kaam karna hai.. */
+    .service-content{
+        display: flex;
+        flex-direction: column;
+        
+    }
+/* pricing ka kaam karna hai, */
+    .pricing .table{
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        margin-top: 55px;
+        margin-right: 105px;
+
+    }
+    .pricing .table .basic{
+        width: 55vmin;
+        /* border: 2px solid black; */
+        margin: 15px;
+
+    } 
+    .pricing .table .basic .basic-head h3{
+        font-size: 7vmin;
+    }
+    /* footer ka kaam karna hai  */
+    footer .row-2  {
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .row-2 .first-col h5{
+        font-size: 5.0vmin;
+    }
+    .footer .row-2 .four-col h5{
+        font-size: 7vmin;
+    }
+    .footer .row-2 .four-col button{
+        font-size: 3vmin;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: fixed;
+      right: 0;
+    background-attachment: fixed;
+
+      top: 0;
+      transition: all 0.5s ease;
+
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      /* position: fixed; */
+      text-align: left;
+      transition: all 0.5s ease;
+
+    }
+  }
+
+
+
+
+

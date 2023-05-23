@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamaghata-+</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylecalci.css">
+</head>
+<body>
+    <div class="full-content">
+    <h1 style="text-align: center;">Simplest Calculator</h1>
+    <div class="main">
+    <form class="calciform" name="calciform">
+        <div class="screen myInput">
+            <input type="text" name="screen">
+        </div>
+        <br>
+        <div class="btn">
+            <input type="button" class="numbers" name="nums1" value="1" onclick="valueButton(this);">
+            <input type="button" class="numbers" name="nums2" value="2" onclick="valueButton(this);">
+            <input type="button" class="numbers" name="nums3" value="3" onclick="valueButton(this);">
+            <input type="button" class="clearbtn" name="clear" value="clear" onclick="Clear();">
+        </div>
+        <div class="btn">
+            <input type="button" class="numbers" name="nums4" value="4" onclick="valueButton(this);">
+            <input type="button" class="numbers" name="nums5" value="5" onclick="valueButton(this);">
+            <input type="button" class="numbers" name="nums6" value="6" onclick="valueButton(this);">
+            <input type="button" class="plus" name="plus" value="+" onclick="valueButton(this);">
+        </div>
+        <div class="btn">
+            <input type="button" class="numbers" name="nums7" value="7" onclick="valueButton(this);">
+            <input type="button" class="numbers" name="nums8" value="8" onclick="valueButton(this);">
+            <input type="button" class="numbers" name="nums9" value="9" onclick="valueButton(this);">
+            <input type="button" class="sub" name="sub" value="-" onclick="valueButton(this);">
+        </div>
+        <div class="btn">
+            <input type="button" class="numbers" name="num0" value="0" onclick="valueButton(this);">
+            <input type="button" class="numbers" name="mul" value="*" onclick="valueButton(this);">
+            <input type="button" class="numbers" name="div" value="/" onclick="valueButton(this);">
+            <input type="button" class="equal" name="equal" value="=" onclick="Calculate()">
+        </div>
+    </form>
+
+
+
+</div>
+</div>
+
+<script>
+    input.addEventListener("keypress", function(event) {
+      // If the user presses the "Enter" key on the keyboard
+      if (event.key === "Enter") {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Trigger the button element with a click
+        document.getElementById("equal").click();
+      }
+    });
+    function valueButton(e){
+        calciform.screen.value += e.value;
+    }
+
+    function Clear(){
+        calciform.screen.value = null;
+    }
+
+    function Calculate(){
+        calciform.screen.value = eval(calciform.screen.value);
+    }
+    var input = document.getElementById("myInput");
+
+// Execute a function when the user presses a key on the keyboard
+</script>
+    
+</body>
+</html>
